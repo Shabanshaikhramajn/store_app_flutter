@@ -1,0 +1,65 @@
+name: store_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  flutter_bloc: ^9.1.1
+  dio: ^5.9.1
+  get_it: ^9.2.1
+  json_annotation: ^4.11.0
+  pretty_dio_logger: ^1.4.0
+  flutter_secure_storage: ^10.0.0
+  shared_preferences: ^2.5.4
+  build_runner: ^2.11.1
+  json_serializable: ^6.13.0
+  equatable: ^2.0.8
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  uuid: ^4.5.3
+  sqflite_common_ffi: ^2.4.0+2
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+
+flutter_native_splash:
+  color: "#1A1A1A"
+  image: assets/icons/splash_icon.png
+  android_12:
+    color: "#1A1A1A"
+    image: assets/icons/splash_icon.png
+  ios: true
+  android: true
+  web: false
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/splash_icon.png"
+  adaptive_icon_background: "#FF6B35"
+  adaptive_icon_foreground: "assets/icons/splash_icon.png"
+  min_sdk_android: 21
